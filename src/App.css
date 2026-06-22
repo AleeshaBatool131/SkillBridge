@@ -1,0 +1,344 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter,sans-serif;
+}
+
+body{
+  background:#f8fafc;
+}
+
+/* NAVBAR */
+
+.navbar{
+  position:sticky;
+  top:0;
+  background:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 8%;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+  z-index:1000;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:700;
+  color:#2563eb;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#1e293b;
+  font-weight:500;
+}
+
+.desktop-buttons{
+  display:flex;
+  gap:10px;
+}
+
+.login-btn{
+  border:none;
+  background:none;
+  cursor:pointer;
+}
+
+.signup-btn{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.hamburger{
+  display:none;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:60px 8%;
+  gap:50px;
+}
+
+.hero-left{
+  color: #0f172a;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-left h1{
+  color: #0f172a;
+  font-size:60px;
+  line-height:1.1;
+}
+
+.hero-left span{
+  color:#2563eb;
+}
+
+.hero-left p{
+  margin:20px 0;
+  color:#2b3035;
+  font-size:18px;
+}
+
+.search-box{
+  display:flex;
+  margin:25px 0;
+}
+
+.search-box input{
+  flex:1;
+  padding:14px;
+  border:1px solid #ddd;
+}
+
+.search-box button{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:14px 24px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:15px;
+}
+
+.primary-btn{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:14px 25px;
+  border-radius:8px;
+}
+
+.secondary-btn{
+  padding:14px 25px;
+  border-radius:8px;
+  border:1px solid #2563eb;
+}
+/* 1. Wrapper that ensures everything centers on the page */
+.stats-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 8%;
+  margin: 40px 0; /* Creates breathing room between Hero and Popular Services */
+}
+
+/* 2. The prominent floating card styling */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Divides into 3 perfectly equal columns */
+  background: #ffffff;
+  border: 1px solid #e2e8f0; /* Soft modern border line */
+  border-radius: 16px;
+  padding: 30px 40px;
+  max-width: 1100px;
+  width: 100%;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 
+              0 8px 10px -6px rgba(0, 0, 0, 0.05); /* Soft premium depth shadow */
+}
+
+/* 3. The inner stat items */
+.stats div {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  position: relative;
+}
+
+/* 4. Elegant dividers between the metrics */
+.stats div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: #e2e8f0;
+}
+
+.stats h3 {
+  font-size: 36px;
+  color: #0f172a;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.stats span {
+  color: #64748b; /* Soft gray for description feels much more balanced than pure blue */
+  font-size: 15px;
+  font-weight: 500;
+}
+.hero-right{
+  flex:1;
+  display:flex;
+  justify-content:center;
+}
+
+.hero-right img{
+  width:100%;
+  border-radius:20px;
+}
+
+/* SERVICES */
+
+.services{
+  padding:80px 8%;
+}
+
+.services h2{
+  text-align:center;
+  font-size:40px;
+  color:#0f172a;
+}
+
+.services > p{
+  text-align:center;
+  margin:15px 0 40px;
+  color:#64748b;
+  font-size:18px;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.service-card{
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 4px 15px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.service-card:hover{
+  transform:translateY(-8px);
+}
+
+.service-card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.service-card h3{
+  padding:15px;
+}
+
+.service-card p,
+.service-card span{
+  padding:0 15px 15px;
+}
+
+/* FOOTER */
+
+.footer{
+  background:#0f172a;
+  color:white;
+  padding:60px 8% 20px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:40px;
+}
+
+.footer ul{
+  list-style:none;
+  margin-top:15px;
+}
+
+.footer li{
+  margin-bottom:10px;
+}
+
+.copyright{
+  text-align:center;
+  margin-top:40px;
+  border-top:1px solid #334155;
+  padding-top:20px;
+}
+
+/* MOBILE */
+
+.mobile-buttons{
+  display:none;
+}
+
+@media(max-width:768px){
+
+  .hamburger{
+    display:block;
+  }
+
+  .desktop-buttons{
+    display:none;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:80px;
+    left:-100%;
+    width:100%;
+    background:white;
+    flex-direction:column;
+    padding:30px;
+    transition:.3s;
+  }
+
+  .nav-links.active{
+    left:0;
+  }
+
+  .mobile-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .hero{
+    flex-direction:column;
+  }
+
+  .hero-left h1{
+    font-size:40px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr; /* Stack items vertically on mobile */
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  /* Hide the vertical divider lines on mobile viewports */
+  .stats div:not(:last-child)::after {
+    display: none;
+  }
+}
