@@ -1,0 +1,24 @@
+.stats-section {
+  padding: 6rem 8%;
+  background: #2563eb;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  text-align: center;
+  color: white;
+}
+
+.stat-card h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 1.1rem;
+}

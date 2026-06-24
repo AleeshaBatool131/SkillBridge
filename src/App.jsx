@@ -1,19 +1,7 @@
-import "./App.css";
-
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import FeaturedServices from "./components/FeaturedServices";
-import Footer from "./components/Footer";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <FeaturedServices />
-      <Footer />
-    </>
-  );
+  return <AppRoutes />;
 }
 
 export default App;
