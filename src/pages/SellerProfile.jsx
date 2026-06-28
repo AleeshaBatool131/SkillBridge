@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
 import "../components/SellerProfile/SellerProfile.css";
+import useScrollReveal from "../hooks/useScrollReveal";
 
 function SellerProfile() {
   const { id } = useParams();
@@ -18,12 +19,12 @@ function SellerProfile() {
   if (!seller) {
     return <h1>Seller Not Found</h1>;
   }
-
+  useScrollReveal();
   return (
     <>
       <Navbar />
 
-      <section className="seller-banner">
+      <section className="seller-banner reveal">
         <div className="banner-overlay">
           <img
             src={seller.image}
@@ -52,7 +53,7 @@ function SellerProfile() {
         </div>
       </section>
 
-      <section className="seller-content">
+      <section className="seller-content reveal">
 
         <div className="about-card">
           <h2>About Me</h2>

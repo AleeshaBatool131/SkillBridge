@@ -9,7 +9,7 @@ import { SiNetflix} from "react-icons/si"
 
 function TrustedBy() {
   return (
-    <section className="trusted">
+    <section className="trusted reveal">
 
       <p>Trusted by leading companies worldwide</p>
 

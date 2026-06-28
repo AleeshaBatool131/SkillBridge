@@ -17,7 +17,7 @@ function WhyChooseUs() {
   ];
 
   return (
-    <section className="why-choose">
+    <section className="why-choose reveal">
 
       <h2>Why Choose Us</h2>
 

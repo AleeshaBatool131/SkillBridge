@@ -6,8 +6,11 @@ import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import Stats from "../components/Stats/Stats";
 import CTA from "../components/CTA/CTA";
 import Footer from "../components/Footer/Footer";
+import useScrollReveal from "../hooks/useScrollReveal";
+
 
 function Home() {
+  useScrollReveal();
   return (
     <>
       <Navbar />

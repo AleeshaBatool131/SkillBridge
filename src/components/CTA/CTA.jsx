@@ -2,7 +2,7 @@ import "./CTA.css";
 
 function CTA() {
   return (
-    <section className="cta-section">
+    <section className="cta-section reveal">
       <div className="cta-container">
 
         <h2>

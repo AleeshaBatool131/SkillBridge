@@ -4,15 +4,17 @@ import Footer from "../components/Footer/Footer";
 import team from "../data/teamData";
 
 import "../components/About/About.css";
+import useScrollReveal from "../hooks/useScrollReveal";
 
 function About() {
+    useScrollReveal();
   return (
     <>
       <Navbar />
 
       {/* Hero */}
 
-      <section className="about-hero">
+      <section className="about-hero reveal">
 
         <div className="about-overlay">
 
@@ -28,7 +30,7 @@ function About() {
 
       {/* Company */}
 
-      <section className="company-section">
+      <section className="company-section reveal">
 
         <div className="company-left">
 
@@ -77,7 +79,7 @@ function About() {
 
       {/* Mission Vision */}
 
-      <section className="mission-section">
+      <section className="mission-section reveal">
 
         <div className="mission-card">
 
@@ -107,7 +109,7 @@ function About() {
 
       {/* Statistics */}
 
-      <section className="about-stats">
+      <section className="about-stats reveal">
 
         <div>
 
@@ -145,7 +147,7 @@ function About() {
 
       {/* Team */}
 
-      <section className="team-section">
+      <section className="team-section reveal">
 
         <h2>Meet Our Team</h2>
 

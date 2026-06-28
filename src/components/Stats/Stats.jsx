@@ -21,7 +21,7 @@ function Stats() {
   ];
 
   return (
-    <section className="stats-section">
+    <section className="stats-section reveal">
       <div className="stats-container">
         {stats.map((item, index) => (
           <div className="stat-card" key={index}>

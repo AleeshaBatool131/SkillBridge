@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 
 function FeaturedServices() {
   return (
-    <section className="featured-services">
+    <section className="featured-services reveal">
 
       <div className="section-header">
         <h2>Featured Services</h2>

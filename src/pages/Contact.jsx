@@ -10,6 +10,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
 import "../components/Contact/Contact.css";
+import useScrollReveal from "../hooks/useScrollReveal";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -79,14 +80,14 @@ function Contact() {
       setSubmitted(false);
     }, 4000);
   };
-
+  useScrollReveal();
   return (
     <>
       <Navbar />
 
       {/* Hero */}
 
-      <section className="contact-hero">
+      <section className="contact-hero reveal">
 
         <h1>Get In Touch</h1>
 
@@ -100,7 +101,7 @@ function Contact() {
 
       {/* Contact Cards */}
 
-      <section className="contact-info">
+      <section className="contact-info reveal">
 
         <div className="info-box">
           <FaEnvelope />
@@ -130,7 +131,7 @@ function Contact() {
 
       {/* Form */}
 
-      <section className="contact-section">
+      <section className="contact-section reveal">
 
         <div className="contact-form">
 
@@ -212,7 +213,7 @@ function Contact() {
 
       {/* FAQ */}
 
-      <section className="faq-section">
+      <section className="faq-section reveal">
 
         <h2>Frequently Asked Questions</h2>
 

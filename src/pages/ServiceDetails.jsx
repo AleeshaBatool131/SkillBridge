@@ -12,6 +12,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
 import "../components/ServiceDetails/ServiceDetails.css";
+import useScrollReveal from "../hooks/useScrollReveal";
 
 function ServiceDetails() {
 
@@ -24,7 +25,7 @@ function ServiceDetails() {
   if (!service) {
     return <h1>Service Not Found</h1>;
   }
-
+  useScrollReveal();
   return (
     <>
       <Navbar />
@@ -38,7 +39,7 @@ function ServiceDetails() {
 
       </section>
 
-      <section className="service-container">
+      <section className="service-container reveal">
 
         <div className="service-left">
 
