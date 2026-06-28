@@ -14,6 +14,7 @@ import brandIdentity from "/images/brandIdentityDesign.jpg";
 const services = [
   {
     id: 1,
+    sellerId: 1,
     title: "Website Development",
     freelancer: "Ali Hassan",
     category: "Web Development",
@@ -24,6 +25,7 @@ const services = [
   },
   {
     id: 2,
+    sellerId: 2,
     title: "React Frontend Development",
     freelancer: "Sara Khan",
     category: "Web Development",
@@ -34,6 +36,7 @@ const services = [
   },
   {
     id: 3,
+    sellerId: 3,
     title: "Logo Design",
     freelancer: "Ahmed Raza",
     category: "Graphic Design",
@@ -43,7 +46,8 @@ const services = [
     rating: 4.7,
   },
   {
-    id: 4,
+    id: 4,    
+    sellerId: 4,
     title: "Brand Identity Design",
     freelancer: "Fatima Noor",
     category: "Graphic Design",
@@ -54,6 +58,7 @@ const services = [
   },
   {
     id: 5,
+    sellerId: 5,
     title: "YouTube Video Editing",
     freelancer: "Usman Ali",
     category: "Video Editing",
@@ -64,6 +69,7 @@ const services = [
   },
   {
     id: 6,
+    sellerId: 6,
     title: "Social Media Reels",
     freelancer: "Ayesha Malik",
     category: "Video Editing",
@@ -74,6 +80,7 @@ const services = [
   },
   {
     id: 7,
+    sellerId: 7,
     title: "SEO Marketing",
     freelancer: "Bilal Khan",
     category: "Marketing",
@@ -84,6 +91,7 @@ const services = [
   },
   {
     id: 8,
+    sellerId: 8,
     title: "Social Media Marketing",
     freelancer: "Hamza Ahmed",
     category: "Marketing",
@@ -94,6 +102,7 @@ const services = [
   },
   {
     id: 9,
+    sellerId: 9,
     title: "Blog Writing",
     freelancer: "Zara Ali",
     category: "Writing",
@@ -104,6 +113,7 @@ const services = [
   },
   {
     id: 10,
+    sellerId: 10,
     title: "Copywriting",
     freelancer: "Hina Sheikh",
     category: "Writing",
@@ -114,6 +124,7 @@ const services = [
   },
   {
     id: 11,
+    sellerId: 11,
     title: "Android App Development",
     freelancer: "Saad Khan",
     category: "Programming",
@@ -124,6 +135,7 @@ const services = [
   },
   {
     id: 12,
+    sellerId: 12,
     title: "Flutter App Development",
     freelancer: "Mariam Ahmed",
     category: "Programming",

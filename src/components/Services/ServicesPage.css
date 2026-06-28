@@ -115,3 +115,40 @@
   align-items: center;
   gap: 5px;
 }
+.card-buttons {
+  margin-top: 1.5rem;
+
+  display: flex;
+  gap: 1rem;
+}
+
+.details-btn,
+.seller-btn {
+  text-decoration: none;
+
+  padding: 0.8rem 1rem;
+
+  border-radius: 8px;
+
+  text-align: center;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.details-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.seller-btn {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.details-btn:hover,
+.seller-btn:hover {
+  transform: translateY(-2px);
+}
